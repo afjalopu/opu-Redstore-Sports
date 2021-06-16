@@ -1,0 +1,425 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body
+{
+    font-family: 'Cabin', sans-serif;
+}
+.header
+{
+    background: radial-gradient( rgb(255, 219, 219), rgba(245, 102, 190, 0.4));
+}
+
+.container
+{
+    max-width: 1300px;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin: auto;
+}
+
+/* Navbar Starts From Here */
+.logo img
+{
+    padding: 15px 15px;
+}
+.navbar
+{
+    display: flex;
+    align-items: center;
+    padding: 10px 10px;
+}
+nav ul li
+{
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    color: rgb(192, 157, 157);
+}
+nav ul li a{
+    text-decoration: none;
+}
+nav
+{
+    flex: 1;
+    text-align: right;
+}
+
+/* Media Query Starts For 800px Devices */
+@media only screen and (max-width: 800px)
+{
+    nav ul{
+        position: absolute;
+        top: 70px;
+        right: 0;
+        background-color: rgb(7, 7, 7);
+        width: 100%;
+        overflow: hidden;
+        transition: 0.7s;
+    }
+    nav ul li{
+      display: block;
+      padding: none;
+      text-align: right;
+    }
+    nav ul li a{
+        color: rgb(255, 255, 255);
+        margin-right: 22px;
+    }
+    .navbar .fa-bars
+    {
+        display: block;
+        padding: 10px 10px;
+        font-size: 1.4rem;
+        color: rgb(255, 68, 0);
+        cursor: pointer;
+    }
+    
+  }
+/* Media Query Ends For 800px Devices */
+
+
+/* Media Query Starts For 600px Devices */
+@media only screen and (max-width: 600px)
+{
+   
+
+
+}
+
+
+
+
+
+
+/* Media Query Ends For 600px Devices */
+
+
+
+
+
+
+
+
+/* Menubar and Cart Starts From Here */
+.navbar i
+{
+    display: none;
+}
+.navbar .fa-shopping-cart
+{
+    display: block;
+    padding: 10px 10px;
+    font-size: 1.4rem;
+    color: rgb(255, 86, 24);
+    cursor: pointer;
+}
+
+/* Menubar Ends Here */
+
+
+.row
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.col-2
+{
+   flex-basis: 50%;
+   min-width: 300px;
+}
+.col-2 img
+{
+    min-width: 100%;
+    padding: 50px;
+}
+.col-2 h1
+{
+   padding: 10px 10px;
+}
+.col-2 p
+{
+   text-align: left;
+   color: black;
+}
+.btn
+{
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 6px 6px;
+    border: 1px solid black;
+    border-radius: 17px;
+    background-color: rgb(231, 98, 49);
+    color: white;
+    transition: .9s;
+    margin-left: 10px;
+}
+.btn:hover
+{
+    background-color: black;
+}
+
+/* Navbar Ends Here */
+
+
+/* <!-- ------Catagory Starts From Here------ --> */
+
+.catagory
+{
+    margin: 30px;
+}
+.small-container{
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 20px 20px;
+    text-align: center;
+}
+.col-3-cat
+{
+    flex-basis: 30%;
+}
+.col-3-cat img
+{
+   max-width: 100%;
+   padding: 20px 20px;
+}
+
+/* <!-- ------Catagory Ends Here------ --> */
+
+
+
+
+
+/* <!-- Featured Products Starts From here --> */
+
+.h1
+{
+    padding: 20px;
+    margin: 20px;
+    position: relative;
+}
+.h1::after
+{
+    content: '';
+    height: 5px;
+    width: 0%;
+    position: absolute;
+    background-color: orangered;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%);
+    transition: 1.4s;
+}
+.h1:hover::after
+{
+   width: 25%;
+}
+
+.col-4
+{
+    flex-basis: 25%;
+    min-width: 200px;
+    padding: 10px 10px;
+    transition: .2s;
+}
+.col-4:hover
+{
+    transform: translateY(-7px);
+}
+
+.col-4 img
+{
+    width: 100%;
+}
+.rating
+{
+    padding: 5px;
+}
+.rating h4,i,p
+{
+    text-align: center;
+    padding: 3px 0;
+}
+.rating i
+{
+    color: rgb(255, 68, 0);
+}
+
+
+/* <!-- Featured Products Ends here --> */
+
+
+
+
+/* <!-- Offer Products Starts here --> */
+
+.col-2 h1,h5,p
+{
+    padding: 10px 10px;
+    text-align: left;
+}
+.col-2 p
+{
+    font-size: .9rem;
+    font-weight: lighter;
+}
+
+.col-2 h1
+{
+    font-weight: bolder;
+    font-size: 2.4rem;
+}
+.offer
+{
+    background: radial-gradient(white,rgb(253, 165, 179));
+}
+
+.btn2
+{
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 6px 6px;
+    border: 1px solid black;
+    border-radius: 17px;
+    background-color: rgb(231, 98, 49);
+    color: white;
+    transition: .9s;
+}
+.btn2:hover
+{
+    background-color: black;
+} 
+
+
+/* <!-- Offer Products Ends here --> */
+
+/* <!-- Testimonial Starts From Here --> */
+
+
+.testimonial
+{
+    padding: 30px 30px;
+    padding-top: 65px;
+    text-align: center;
+    min-width: 800px;
+    background: radial-gradient(rgb(255, 255, 255), rgb(190, 243, 247));
+}
+.testimonial .col-3
+{
+    transition: .4s;
+}
+.testimonial .col-3:hover
+{
+       box-shadow: 2px 2px 1px 1px rgb(182, 180, 180) ;
+       transform: translateY(-10px);
+}
+.col-3 .fas
+{
+    color: orangered ;
+}
+.quote
+{
+    text-align: center;
+    padding: 6px;
+}
+
+.col-3
+{
+    flex-basis: 30%;
+}
+.col-3 img
+{
+   max-width: 100%;
+   padding: 20px 20px;
+}
+
+.col-3 img
+{
+    width: 100px;
+    border-radius: 50%;
+}
+.col-3 .p{
+    padding: 30px 10px;
+    color: rgb(29, 27, 27);
+}
+.h3{
+    font-size: 1.2rem;
+    font-weight: bolder;
+    padding: 10px 5px;
+}
+/* <!-- Testimonial Ends Here --> */
+
+
+/* <!-- Brands Starts From Here --> */
+
+.col-5 img
+{
+   flex-basis: 20%;
+   margin: 10px;
+   min-width: 100px;
+   filter: grayscale(100%);
+}
+.col-5 img:hover
+{
+    filter: grayscale(0%);
+}
+
+/* <!-- Brands Ends Here --> */
+
+
+/* <!-- Footer Starts From Here --> */
+
+.footer{
+    background-color: black;
+    min-height: 200px;
+    padding: 20px 30px;
+}
+.footer-col-1 h5,p{
+    color: white;
+    font-size: 1rem;
+}
+.footer-col-1-img
+{
+    text-align: left;
+    margin-left: 10px;
+    margin: 10px;
+}
+.footer-col-1
+{
+    flex-basis: 35%;
+}
+
+.footer-col-2
+{
+    flex-basis: 20%;
+}
+.footer-col-2 p
+{
+    font-size: 1.1rem;
+}
+
+.footer-col-3
+{
+    flex-basis: 20%;
+     cursor: pointer;
+}
+.footer-col-3 h3,p
+{
+    color: White;
+    text-align: center;
+}
+.hr{
+    margin: 20px;
+}
+
+.footer-bottom p
+{
+    font-size: 1rem;
+}
+
+/* <!-- Footer Ends Here --> */ */
